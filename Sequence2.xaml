@@ -1,0 +1,379 @@
+﻿<Activity mc:Ignorable="sap sap2010 sads" x:Class="Sequence2" mva:VisualBasic.Settings="{x:Null}"
+ xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities"
+ xmlns:s="clr-namespace:System;assembly=mscorlib"
+ xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
+ xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
+ xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
+ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
+ xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib"
+ xmlns:ui="http://schemas.uipath.com/workflow/activities"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Sequence2">
+    <ui:OpenBrowser UiBrowser="{x:Null}" BrowserType="IE" DisplayName="Open Browser" Hidden="False" NewSession="True" Private="False" Url="https://www.moneycontrol.com/markets/fno-market-snapshot">
+      <ui:OpenBrowser.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do">
+            <Sequence DisplayName="Web">
+              <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="IE" DisplayName="Attach Browser 'FOMarketS Page'" InformativeScreenshot="ebbb2d14de910945c87c5ed65cf11495" Selector="&lt;html htmlwindowname='/21751243814/32339-160-600-3' title='F&amp;amp;O Market Snapshot: Future and Options NSE, BSE, F&amp;amp;O margin, F&amp;amp;*' /&gt;">
+                <ui:BrowserScope.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do">
+                      <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  nsetabs1'" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition OffsetX="61" OffsetY="19" Position="TopLeft" />
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="76b86e3d23aa2eab53a4f2b88abd8ae0" Selector="&lt;webctrl id='nsetabs1' tag='A' /&gt;" WaitForReady="COMPLETE" />
+                        </ui:Click.Target>
+                        <sap2010:WorkflowViewState.IdRef>Click_1</sap2010:WorkflowViewState.IdRef>
+                      </ui:Click>
+                      <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  navtab1_1'" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition OffsetX="37" OffsetY="6" Position="TopLeft" />
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="8a661dabdf6e29434fd74420f6d0dccd" Selector="&lt;webctrl id='navtab1_1' tag='A' /&gt;" WaitForReady="COMPLETE" />
+                        </ui:Click.Target>
+                        <sap2010:WorkflowViewState.IdRef>Click_2</sap2010:WorkflowViewState.IdRef>
+                      </ui:Click>
+                      <Assign>
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="s:String[]">[company]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="s:String[]">[{"Infosys","SBI","ONGC","Reliance","Tata Steel"}]</InArgument>
+                        </Assign.Value>
+                        <sap2010:WorkflowViewState.IdRef>Assign_1</sap2010:WorkflowViewState.IdRef>
+                      </Assign>
+                      <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" Values="[company]">
+                        <ui:ForEach.Body>
+                          <ActivityAction x:TypeArguments="x:Object">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="x:Object" Name="item" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Body">
+                              <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item " Item="[item.ToString]">
+                                <ui:SelectItem.Items>
+                                  <scg:List x:TypeArguments="x:String" Capacity="50">
+                                    <x:String>Select</x:String>
+                                    <x:String>ACC</x:String>
+                                    <x:String>Adani Enterpris</x:String>
+                                    <x:String>Adani Ports</x:String>
+                                    <x:String>Adani Power</x:String>
+                                    <x:String>Ajanta Pharma</x:String>
+                                    <x:String>Allahabad Bank</x:String>
+                                    <x:String>Amara Raja Batt</x:String>
+                                    <x:String>Ambuja Cements</x:String>
+                                    <x:String>Apollo Hospital</x:String>
+                                    <x:String>Apollo Tyres</x:String>
+                                    <x:String>Arvind</x:String>
+                                    <x:String>Ashok Leyland</x:String>
+                                    <x:String>Asian Paints</x:String>
+                                    <x:String>Aurobindo Pharm</x:String>
+                                    <x:String>Axis Bank</x:String>
+                                    <x:String>Bajaj Auto</x:String>
+                                    <x:String>Bajaj Finance</x:String>
+                                    <x:String>Bajaj Finserv</x:String>
+                                    <x:String>Balkrishna Ind</x:String>
+                                    <x:String>Bank of Baroda</x:String>
+                                    <x:String>Bank of India</x:String>
+                                    <x:String>Bata India</x:String>
+                                    <x:String>BEML</x:String>
+                                    <x:String>Berger Paints</x:String>
+                                    <x:String>Bharat Elec</x:String>
+                                    <x:String>Bharat Fin</x:String>
+                                    <x:String>Bharat Forge</x:String>
+                                    <x:String>Bharti Airtel</x:String>
+                                    <x:String>Bharti Infratel</x:String>
+                                    <x:String>BHEL</x:String>
+                                    <x:String>Biocon</x:String>
+                                    <x:String>Bosch</x:String>
+                                    <x:String>BPCL</x:String>
+                                    <x:String>Britannia</x:String>
+                                    <x:String>Cadila Health</x:String>
+                                    <x:String>Can Fin Homes</x:String>
+                                    <x:String>Canara Bank</x:String>
+                                    <x:String>Capital First</x:String>
+                                    <x:String>Castrol</x:String>
+                                    <x:String>Ceat</x:String>
+                                    <x:String>Century</x:String>
+                                    <x:String>CESC</x:String>
+                                    <x:String>CG Power</x:String>
+                                    <x:String>Chennai Petro</x:String>
+                                    <x:String>Cholamandalam</x:String>
+                                    <x:String>Cipla</x:String>
+                                    <x:String>Coal India</x:String>
+                                    <x:String>Colgate</x:String>
+                                    <x:String>Container Corp</x:String>
+                                  </scg:List>
+                                </ui:SelectItem.Items>
+                                <ui:SelectItem.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="35a053ac9de215de43fd5c3009eaa777" Selector="&lt;webctrl id='stock_code' parentid='datatab1_1' tag='SELECT' /&gt;" WaitForReady="INTERACTIVE" />
+                                </ui:SelectItem.Target>
+                                <sap2010:WorkflowViewState.IdRef>SelectItem_1</sap2010:WorkflowViewState.IdRef>
+                              </ui:SelectItem>
+                              <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SELECT  sel_exp_date'" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                                <ui:Click.CursorPosition>
+                                  <ui:CursorPosition Position="Center">
+                                    <ui:CursorPosition.OffsetX>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetX>
+                                    <ui:CursorPosition.OffsetY>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetY>
+                                  </ui:CursorPosition>
+                                </ui:Click.CursorPosition>
+                                <ui:Click.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="9feb1a5604110153de531046a4e698a0" Selector="&lt;html htmlwindowname='/21751243814/32339-160-600-3' title='F&amp;amp;O Market Snapshot: Future and Options NSE, BSE, F&amp;amp;O margin, F&amp;amp;*' /&gt;&lt;webctrl id='sel_exp_date' parentid='datatab1_1' tag='SELECT' /&gt;" WaitForReady="INTERACTIVE" />
+                                </ui:Click.Target>
+                                <sap2010:WorkflowViewState.IdRef>Click_3</sap2010:WorkflowViewState.IdRef>
+                              </ui:Click>
+                              <ui:SendHotkey DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" DisplayName="Send Hotkey" EmptyField="False" Key="down" KeyModifiers="None" SendWindowMessages="False" SpecialKey="True">
+                                <ui:SendHotkey.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" WaitForReady="INTERACTIVE" />
+                                </ui:SendHotkey.Target>
+                                <sap2010:WorkflowViewState.IdRef>SendHotkey_1</sap2010:WorkflowViewState.IdRef>
+                              </ui:SendHotkey>
+                              <ui:SendHotkey DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" DisplayName="Send Hotkey " EmptyField="False" Key="enter" KeyModifiers="None" SendWindowMessages="False" SpecialKey="True">
+                                <ui:SendHotkey.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="2436d7c92d62e4cfa3139ac1fc86595f" WaitForReady="INTERACTIVE" />
+                                </ui:SendHotkey.Target>
+                                <sap2010:WorkflowViewState.IdRef>SendHotkey_2</sap2010:WorkflowViewState.IdRef>
+                              </ui:SendHotkey>
+                              <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  javascript:void(0);'" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                                <ui:Click.CursorPosition>
+                                  <ui:CursorPosition Position="Center">
+                                    <ui:CursorPosition.OffsetX>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetX>
+                                    <ui:CursorPosition.OffsetY>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetY>
+                                  </ui:CursorPosition>
+                                </ui:Click.CursorPosition>
+                                <ui:Click.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="64a80723fdb27d26aab52a1ad54ddabc" Selector="&lt;webctrl parentid='datatab1_1' tag='A' /&gt;" WaitForReady="INTERACTIVE" />
+                                </ui:Click.Target>
+                                <sap2010:WorkflowViewState.IdRef>Click_4</sap2010:WorkflowViewState.IdRef>
+                              </ui:Click>
+                              <Delay Duration="00:00:03" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                              <ui:SendHotkey DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" DisplayName="Send Hotkey 'DIV'" EmptyField="False" Key="pgdn" KeyModifiers="None" SendWindowMessages="False" SpecialKey="True">
+                                <ui:SendHotkey.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="7eeaf434df60e7c00a7fc76ac7a22fb2" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='3' parentid='mc_mainWrapper' tag='DIV' /&gt;" WaitForReady="INTERACTIVE" />
+                                </ui:SendHotkey.Target>
+                                <sap2010:WorkflowViewState.IdRef>SendHotkey_3</sap2010:WorkflowViewState.IdRef>
+                              </ui:SendHotkey>
+                              <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'push button'" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                                <ui:Click.CursorPosition>
+                                  <ui:CursorPosition Position="Center">
+                                    <ui:CursorPosition.OffsetX>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetX>
+                                    <ui:CursorPosition.OffsetY>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetY>
+                                  </ui:CursorPosition>
+                                </ui:Click.CursorPosition>
+                                <ui:Click.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="547ebfce309b2e5f9e355d12e3108f42" Selector="&lt;wnd app='iexplore.exe' cls='IEFrame' title='F&amp;amp;O Market Snapshot: Future and Options NSE, BSE, F&amp;amp;O margin, F&amp;amp;*' /&gt;&lt;wnd cls='DirectUIHWND' /&gt;&lt;ctrl name='Tab Row' role='page tab list' /&gt;&lt;ctrl name='F&amp;amp;O Market Snapshot: Future and Options NSE, BSE, F&amp;amp;O margin, F&amp;amp;*' role='page tab' /&gt;&lt;ctrl name='Close Tab (Ctrl+W)' role='push button' /&gt;" WaitForReady="INTERACTIVE" />
+                                </ui:Click.Target>
+                                <sap2010:WorkflowViewState.IdRef>Click_5</sap2010:WorkflowViewState.IdRef>
+                              </ui:Click>
+                              <Delay Duration="00:00:06" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                              <ui:SendHotkey DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" DisplayName="Send Hotkey 'DIV'" EmptyField="False" Key="pgdn" KeyModifiers="None" SendWindowMessages="False" SpecialKey="True">
+                                <ui:SendHotkey.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="7eeaf434df60e7c00a7fc76ac7a22fb2" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='3' parentid='mc_mainWrapper' tag='DIV' /&gt;" WaitForReady="INTERACTIVE" />
+                                </ui:SendHotkey.Target>
+                                <sap2010:WorkflowViewState.IdRef>SendHotkey_4</sap2010:WorkflowViewState.IdRef>
+                              </ui:SendHotkey>
+                              <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'DIV'">
+                                <ui:GetValue.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="d6f8ae66e557422865fd84a45bbd0442" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='5' parentid='mc_mainWrapper' tag='DIV' /&gt;" WaitForReady="INTERACTIVE" />
+                                </ui:GetValue.Target>
+                                <ui:GetValue.Value>
+                                  <OutArgument x:TypeArguments="ui:GenericValue">[data]</OutArgument>
+                                </ui:GetValue.Value>
+                                <sap2010:WorkflowViewState.IdRef>GetValue_1</sap2010:WorkflowViewState.IdRef>
+                              </ui:GetValue>
+                              <Assign>
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="s:String[]">[arr]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="s:String[]">[data.Split({" "})]</InArgument>
+                                </Assign.Value>
+                                <sap2010:WorkflowViewState.IdRef>Assign_2</sap2010:WorkflowViewState.IdRef>
+                              </Assign>
+                              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" Buttons="Ok" DisplayName="Message Box" Text="[arr(2)]" TopMost="True" sap2010:WorkflowViewState.IdRef="MessageBox_1" />
+                              <ui:SendHotkey DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" DisplayName="Send Hotkey 'DIV'" EmptyField="False" Key="pgup" KeyModifiers="None" SendWindowMessages="False" SpecialKey="True">
+                                <ui:SendHotkey.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="ba140a8786412550f60312e3b78d5355" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='4' parentid='mc_mainWrapper' tag='DIV' /&gt;" WaitForReady="INTERACTIVE" />
+                                </ui:SendHotkey.Target>
+                                <sap2010:WorkflowViewState.IdRef>SendHotkey_5</sap2010:WorkflowViewState.IdRef>
+                              </ui:SendHotkey>
+                              <sap2010:WorkflowViewState.IdRef>Sequence_1</sap2010:WorkflowViewState.IdRef>
+                            </Sequence>
+                          </ActivityAction>
+                        </ui:ForEach.Body>
+                        <sap2010:WorkflowViewState.IdRef>ForEach`1_1</sap2010:WorkflowViewState.IdRef>
+                      </ui:ForEach>
+                      <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SELECT  stock_code'" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition OffsetX="127" OffsetY="14" Position="TopLeft" />
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="5e72fb7c6018d4944e468342eec25df9" Selector="&lt;webctrl id='stock_code' parentid='datatab1_1' tag='SELECT' /&gt;" WaitForReady="COMPLETE" />
+                        </ui:Click.Target>
+                        <sap2010:WorkflowViewState.IdRef>Click_6</sap2010:WorkflowViewState.IdRef>
+                      </ui:Click>
+                      <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SELECT  sel_exp_date'" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition OffsetX="89" OffsetY="9" Position="TopLeft" />
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="d3b170b832100d495517c80e2ea50485" Selector="&lt;webctrl id='sel_exp_date' parentid='datatab1_1' tag='SELECT' /&gt;" WaitForReady="COMPLETE" />
+                        </ui:Click.Target>
+                        <sap2010:WorkflowViewState.IdRef>Click_7</sap2010:WorkflowViewState.IdRef>
+                      </ui:Click>
+                      <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  javascript:void(0);'" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition OffsetX="70" OffsetY="6" Position="TopLeft" />
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="183c97ef39b03e1fcea7f3143978217e" Selector="&lt;webctrl parentid='datatab1_1' tag='A' /&gt;" WaitForReady="COMPLETE" />
+                        </ui:Click.Target>
+                      </ui:Click>
+                      <sap2010:WorkflowViewState.IdRef>Sequence_2</sap2010:WorkflowViewState.IdRef>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:BrowserScope.Body>
+                <sap2010:WorkflowViewState.IdRef>BrowserScope_1</sap2010:WorkflowViewState.IdRef>
+              </ui:BrowserScope>
+              <sap2010:WorkflowViewState.IdRef>Sequence_3</sap2010:WorkflowViewState.IdRef>
+            </Sequence>
+            <sap2010:WorkflowViewState.IdRef>Sequence_4</sap2010:WorkflowViewState.IdRef>
+          </Sequence>
+        </ActivityAction>
+      </ui:OpenBrowser.Body>
+      <sap2010:WorkflowViewState.IdRef>OpenBrowser_1</sap2010:WorkflowViewState.IdRef>
+    </ui:OpenBrowser>
+    <sap2010:WorkflowViewState.IdRef>Sequence_5</sap2010:WorkflowViewState.IdRef>
+    <sads:DebugSymbol.Symbol>d0NDOlxVc2Vyc1xIcFxEb2N1bWVudHNcVWlQYXRoXFN0b2NrX01hcmtldF9BdXRvbWF0aW9uXFNlcXVlbmNlMi54YW1sRDoDuwIOAgEBOwW4AhYCAQI7iwE7xQECAUVBC7QCFgIBA0INsgIYAgEEQw+wAiECAQVD9QFDlQMCAURJFawCIAIBBkoXUiICAUBTF1siAgE8XBdkIAIBOWUXkAIkAgETkQIXmQIiAgEPmgIXogIiAgELowIXqgIiAgEHT6oBT9MBAgFDTENMRwIBQkw2TDoCAUFYqgFY1AECAT9VQ1VGAgE+VTZVOgIBPWFEYXYCATteRV5OAgE6ZXRlfwIBOGsdjAIoAgEUlgKqAZYC8AECARKTAkSTAkgCARGTAjaTAjsCARCfAqoBnwLyAQIBDpwCQ5wCRgIBDZwCNpwCOgIBDKgCqgGoAtsBAgEKpQJDpQJGAgEJpQI2pQI6AgEIbB+nAS8CATSoAR+3ASoCATK4AR+9AS8CATC+AR/DAS8CAS7EAR/TASoCASzUAR/UAWYCASrVAR/aAS8CASfbAR/qASoCASXrAR/rAWYCASPsAR/xAS8CASDyAR/6AS0CAR37AR+DAigCARqEAh+EAtABAgEYhQIfigIvAgEVbJYBbKcBAgE1pAGyAaQB+AECATe0AbIBtAGYAwIBM7gBzwG4AdUBAgExvgHQAb4B1wECAS/QAbIB0AHjAQIBLdQBL9QBOQIBK9cBsgHXAbwCAgEp1QHVAdUB2wECASjnAbIB5wHQBAIBJusBL+sBOQIBJO4BsgHuAbwCAgEi7AHVAewB2wECASH3AVL3AVgCAR70AbIB9AHoAgIBH4ACTIACXwIBHP0BTf0BUgIBG4QChQGEAo8BAgEZhwKyAYcCsQICAReFAtUBhQLbAQIBFg==</sads:DebugSymbol.Symbol>
+  </Sequence>
+  <sap2010:WorkflowViewState.IdRef>Sequence2_1</sap2010:WorkflowViewState.IdRef>
+  <sap2010:WorkflowViewState.ViewStateManager>
+    <sap2010:ViewStateManager>
+      <sap2010:ViewStateData Id="Click_1" sap:VirtualizedContainerService.HintSize="352,106" />
+      <sap2010:ViewStateData Id="Click_2" sap:VirtualizedContainerService.HintSize="352,106" />
+      <sap2010:ViewStateData Id="Assign_1" sap:VirtualizedContainerService.HintSize="352,60" />
+      <sap2010:ViewStateData Id="SelectItem_1" sap:VirtualizedContainerService.HintSize="314,134" />
+      <sap2010:ViewStateData Id="Click_3" sap:VirtualizedContainerService.HintSize="314,106" />
+      <sap2010:ViewStateData Id="SendHotkey_1" sap:VirtualizedContainerService.HintSize="314,116" />
+      <sap2010:ViewStateData Id="SendHotkey_2" sap:VirtualizedContainerService.HintSize="314,154" />
+      <sap2010:ViewStateData Id="Click_4" sap:VirtualizedContainerService.HintSize="314,106" />
+      <sap2010:ViewStateData Id="Delay_1" sap:VirtualizedContainerService.HintSize="314,22" />
+      <sap2010:ViewStateData Id="SendHotkey_3" sap:VirtualizedContainerService.HintSize="314,154" />
+      <sap2010:ViewStateData Id="Click_5" sap:VirtualizedContainerService.HintSize="314,106" />
+      <sap2010:ViewStateData Id="Delay_2" sap:VirtualizedContainerService.HintSize="314,22" />
+      <sap2010:ViewStateData Id="SendHotkey_4" sap:VirtualizedContainerService.HintSize="314,154" />
+      <sap2010:ViewStateData Id="GetValue_1" sap:VirtualizedContainerService.HintSize="314,106" />
+      <sap2010:ViewStateData Id="Assign_2" sap:VirtualizedContainerService.HintSize="314,60" />
+      <sap2010:ViewStateData Id="MessageBox_1" sap:VirtualizedContainerService.HintSize="314,59" />
+      <sap2010:ViewStateData Id="SendHotkey_5" sap:VirtualizedContainerService.HintSize="314,154" />
+      <sap2010:ViewStateData Id="Sequence_1" sap:VirtualizedContainerService.HintSize="336,2097">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="ForEach`1_1" sap:VirtualizedContainerService.HintSize="352,2230" />
+      <sap2010:ViewStateData Id="Click_6" sap:VirtualizedContainerService.HintSize="352,106" />
+      <sap2010:ViewStateData Id="Click_7" sap:VirtualizedContainerService.HintSize="352,106" />
+      <sap2010:ViewStateData Id="Sequence_2" sap:VirtualizedContainerService.HintSize="374,3098">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="BrowserScope_1" sap:VirtualizedContainerService.HintSize="414,3244" />
+      <sap2010:ViewStateData Id="Sequence_3" sap:VirtualizedContainerService.HintSize="436,3368">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="Sequence_4" sap:VirtualizedContainerService.HintSize="458,3492">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="OpenBrowser_1" sap:VirtualizedContainerService.HintSize="472,3591" />
+      <sap2010:ViewStateData Id="Sequence_5" sap:VirtualizedContainerService.HintSize="494,3715">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="Sequence2_1" sap:VirtualizedContainerService.HintSize="240,259" />
+    </sap2010:ViewStateManager>
+  </sap2010:WorkflowViewState.ViewStateManager>
+</Activity>
